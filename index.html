@@ -4,24 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Node</title>
+    <link rel="stylesheet" href="./main/styles.css" />
   </head>
   <body>
-    <div>
-      <form>
-        <h1>Inicio</h1>
-        <div>
-          <input type="input" placeholder="Usuario" />
-          <i></i>
-        </div>
-        <div>
-          <input type="input" placeholder="Contraseña" />
-          <i></i>
-        </div>
-        <button>Iniciar Sesión</button>
-        <p>¿No tienes una cuenta? <a href="">Registrate</a></p>
+    <section class="contenedor">
+      <form class="contenedor-form">
+        <h1 class="contenedor-form-title">Inicio</h1>
+        <article class="contenedor-form-article1">
+          <input
+            type="input"
+            placeholder="Usuario"
+            class="contenedor-form-article1-input"
+          />
+          <i class="contenedor-form-article1-img"></i>
+        </article>
+        <article class="contenedor-form-article2">
+          <input
+            type="input"
+            placeholder="Contraseña"
+            class="contenedor-form-article2-input"
+          />
+          <i class="contenedor-form-article2-img"></i>
+        </article>
+        <button class="contenedor-boton">Iniciar Sesión</button>
+        <p class="contenedor-parraf">
+          ¿No tienes una cuenta?
+          <a href="#" class="contenedor-parraf-link">Registrate</a>
+        </p>
       </form>
       <div></div>
-      <div><h1>Bienvenido!</h1></div>
-    </div>
+      <article class="contenedor-article3">
+        <h1 class="contenedor-article3-title">Bienvenido!</h1>
+      </article>
+    </section>
   </body>
 </html>
