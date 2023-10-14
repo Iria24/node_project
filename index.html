@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="contenedor">
-      <form class="contenedor-form">
+      <form class="contenedor-form" action="/login" method="post">
         <h1 class="contenedor-form-title">Inicio</h1>
         <article class="contenedor-form-article1">
           <input
@@ -27,7 +27,7 @@
           />
           <i class="contenedor-form-article2-img"></i>
         </article>
-        <button class="contenedor-boton">Iniciar Sesión</button>
+        <button class="contenedor-boton" type="submit">Iniciar Sesión</button>
         <p class="contenedor-parraf">
           ¿No tienes una cuenta?
           <a href="#" class="contenedor-parraf-link">Registrate</a>
@@ -39,7 +39,12 @@
     </section>
 
     <section class="contenedor2">
-      <form class="contenedor2-form">
+      <form
+        class="contenedor2-form"
+        target="/registro"
+        action="/registro"
+        method="post"
+      >
         <h1 class="contenedor2-form-title">Crea una cuenta</h1>
         <article class="contenedor2-form-article1">
           <input
@@ -57,11 +62,7 @@
           />
           <i class="contenedor2-form-article2-img"></i>
         </article>
-        <article class="contenedor2-form-article3">
-          <input type="date" class="contenedor2-form-article3-input" />
-          <i class="contenedor2-form-article3-img"></i>
-        </article>
-        <button class="contenedor2-boton">Crea una cuenta</button>
+        <button class="contenedor2-boton" type="submit">Crea una cuenta</button>
         <p class="contenedor2-parraf">
           ¿Tienes una cuenta?
           <a href="#" class="contenedor2-parraf-link">Inicia Sesión</a>
