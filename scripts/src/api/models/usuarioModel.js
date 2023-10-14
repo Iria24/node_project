@@ -4,7 +4,7 @@ const Esquema = mongoose.Schema;
 
 const usuarioEsquema = new Esquema(
   {
-    usuario: { type: String, required: true },
+    usuario: { type: String, required: true, unique: true },
     contraseña: { type: String, required: true },
     role: {
       type: String,
