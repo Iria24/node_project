@@ -11,9 +11,12 @@ app.use(express.static("../"));
 connectDb();
 
 app.use("/cerveza", routerCerveza);
+app.use("/registro", rutasUsuarios);
+app.use("/login", rutasUsuarios);
+app.use("/perfil", rutasUsuarios);
 app.use("/", rutasUsuarios);
 
 const PORT = 8080;
 app.listen(PORT, () => {
-  console.log("escuchando por el puerto " + PORT);
+  console.log(`Escuchando por el puerto: http://localhost:${PORT}/`);
 });
